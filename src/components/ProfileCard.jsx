@@ -21,8 +21,9 @@ const showTimeFrames = (data) => {
 
 export const ProfileCard = ({data}) => {
   return (
-    <div className='row-span-2 rounded-2xl bg-[#1c1f4a] overflow-hidden'>
-      {/* Card Header */}
+    <div role="profileCard" className='row-span-2 rounded-2xl bg-[#1c1f4a] overflow-hidden'>
+
+      {/* Avatar Section */}
       <div className='p-6 bg-[#6f76c8] rounded-b-2xl flex items-center h-auto sm:block sm:items-start md:h-[65%]'>
         <img
           src={ImgAvatar}
@@ -33,11 +34,13 @@ export const ProfileCard = ({data}) => {
           <label className='text-[12.5px] text-[#bdc1ff]'>
             Report for
           </label>
-          <label className='block font-light text-2xl md:text-4xl'>
+          <h1 className='block font-light text-2xl md:text-4xl'>
             Jeremy Robson
-          </label>
+          </h1>
         </div>
       </div>
+
+      {/* Timeframes Section */}
       <div className='grid grid-cols-3 text-center px-0 pb-0 pt-0 md:px-6 md:pb-auto md:pt-4 md:grid-cols-1 md:text-left'>
         { showTimeFrames(data) }
       </div>

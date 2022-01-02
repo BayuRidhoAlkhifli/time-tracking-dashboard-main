@@ -12,7 +12,7 @@ export const Card = ({ children, title }) => {
 
 
   return (
-    <div className={`relative flex flex-col min-w-0 break-words overflow-hidden ${activityColor.color} bg-clip-border rounded-2xl`}>
+    <div role="cardActivity" className={`relative flex flex-col min-w-0 break-words overflow-hidden ${activityColor.color} bg-clip-border rounded-2xl`}>
       { children }
     </div>
   )
