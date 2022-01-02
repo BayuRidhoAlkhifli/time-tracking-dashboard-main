@@ -20,13 +20,15 @@ const showCardActivity = (activity) => {
 function App() {
   return (
     <ActivityProvider>
-      <div className="text-white mx-auto max-w-[1024px] font-['Rubik'] px-3 py-20 md:h-screen md:flex md:items-center lg:px-6 xl:px-0">
-        <div className='grid grid-cols-1 md:grid-cols-4 gap-5'>
-          <ProfileCard data={data}/>
-          {
-            showCardActivity(data)
-          }
-        </div>      
+      <div className="text-white font-['Rubik'] bg-[#0f1424]">
+        <div className="mx-auto max-w-[1024px] px-3 py-20 md:h-screen md:flex md:items-center lg:px-6 xl:px-0">
+          <div className='grid grid-cols-1 md:grid-cols-4 gap-5'>
+            <ProfileCard data={data}/>
+            {
+              showCardActivity(data)
+            }
+          </div>      
+        </div>
       </div>
     </ActivityProvider>
   );
