@@ -34,12 +34,12 @@ export const ActivityCard = ({activity}) => {
     <Card title={activity.title}>
       
       {/* Icon and Color Activity Section */}
-      <div role="iconColorActivity" className='overflow-hidden px-4' style={{width: '100%', height: 45}}>
+      <div className='overflow-hidden px-4' style={{width: '100%', height: 45}}>
         <img alt={activity.title} src={activityImg.img} className='translate-y-[-0.3rem] float-right scale-90' />
       </div>
 
       {/* Card Activity Section */}
-      <div role="cardActivity" className='p-6 rounded-t-2xl bg-[#1c1f4a] cursor-pointer hover:bg-[#34397B]'>
+      <div className='p-6 rounded-t-2xl bg-[#1c1f4a] cursor-pointer hover:bg-[#34397B]'>
 
         <div className="flex justify-between text-[18px]">
           <span className="font-medium">

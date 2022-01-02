@@ -21,7 +21,7 @@ const showTimeFrames = (data) => {
 
 export const ProfileCard = ({data}) => {
   return (
-    <div role="profileCard" className='row-span-2 rounded-2xl bg-[#1c1f4a] overflow-hidden'>
+    <div className='row-span-2 rounded-2xl bg-[#1c1f4a] overflow-hidden'>
 
       {/* Avatar Section */}
       <div className='p-6 bg-[#6f76c8] rounded-b-2xl flex items-center h-auto sm:block sm:items-start md:h-[65%]'>
